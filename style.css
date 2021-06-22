@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    /* font-family: 'Lexend Deca', sans-serif; */
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    
+}
+
+.container{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.side1, .side2, .side3{
+    padding: 50px;
+}
+
+.side1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.side1 button{
+    color: hsl(31, 77%, 52%);
+}
+
+.side2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.side2 button{
+    color: hsl(184, 100%, 22%);
+}
+
+.side3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.side3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+.container p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    font-family:  'Lexend Deca', sans-serif;
+    /* margin: 30px 0; */
+    margin-bottom: 4em;
+    line-height: 25px;
+}
+
+.container h1{
+    font-size: 3rem;
+    margin: 35px 0;
+}
+
+.container button{
+    padding:15px;
+    border-radius: 30px;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 130px;
+}
+
+
+@media screen and (max-width: 520px){
+    .container{
+        flex-direction: column;
+        max-width: 20.375rem;
+    }
+
+    .side1{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    .side3{
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 0;
+    }
+
+    .container p{
+        margin-bottom: 2em;
+    }
+
+    .container{
+        padding: 0;
+    }
+}
